@@ -1,0 +1,213 @@
+/*Google Font*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+/*Google Font*/
+
+:root {
+  --margin: 25px;
+  --width: 320px;
+  --height: 450px;
+}
+
+* ::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(30, 38%, 92%);
+  background-position: center;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color: hsl(212, 21%, 14%);
+}
+/*----------- Desktop Styling -------------*/
+.desktop-image {
+  width: var(--width);
+  height: var(--height);
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+.mobile-image {
+  display: none;
+}
+.container {
+  width: var(--width);
+  height: var(--height);
+  background-color: white;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+.text-1 {
+  font-size: 14px;
+  margin: var(--margin);
+  letter-spacing: 3px;
+}
+.text-2 {
+  font-family: "Fraunces", serif;
+  margin: 25px;
+  font-weight: 900;
+  color: hsl(212, 21%, 14%);
+}
+.text-3 {
+  font-size: 14px;
+  margin: var(--margin);
+}
+.price-tag {
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  color: hsl(158, 36%, 37%);
+  display: flex;
+
+  margin: var(--margin);
+  align-items: center;
+}
+.price-tag span {
+  font-size: 12px;
+  color: grey;
+  font-family: "Montserrat", sans-serif;
+  padding: 15px;
+  display: inline-block;
+}
+
+.cart {
+  background-color: hsl(157, 40%, 24%);
+  width: 12rem;
+  margin: var(--margin);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart .cart-text {
+  color: white;
+  text-indent: 10px;
+}
+.cart:hover {
+  cursor: pointer;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/*----------- Desktop Styling end -------------*/
+
+/*----------- Mobile Styling -------------*/
+@media screen and (max-width: 600px) {
+  main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: hsl(212, 21%, 14%);
+    flex-direction: column;
+    padding: 30px;
+  }
+  .desktop-image {
+    display: none;
+  }
+  .mobile-image {
+    display: block;
+    width: var(--width);
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .cart {
+    background-color: hsl(157, 40%, 24%);
+    width: 10rem;
+    margin: 55px;
+    margin-top: 12px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  main {
+    min-height: 100vh;
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: hsl(212, 21%, 14%);
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .container {
+    width: 300px;
+    height: var(--height);
+    background-color: white;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  .mobile-image {
+    display: block;
+    width: 300px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .cart {
+    background-color: hsl(157, 40%, 24%);
+    width: 10rem;
+    margin: 51px;
+    margin-top: 12px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 280px) {
+  main {
+    min-height: 100vh;
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    color: hsl(212, 21%, 14%);
+    flex-direction: column;
+    padding: 30px;
+  }
+  .container {
+    width: 260px;
+    height: var(--height);
+    background-color: white;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+  .mobile-image {
+    display: block;
+    width: 260px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  .cart {
+    background-color: hsl(157, 40%, 24%);
+    width: 10rem;
+    margin: 30px;
+    margin-top: 9px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
