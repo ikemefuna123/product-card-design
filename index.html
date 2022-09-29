@@ -15,16 +15,19 @@
   </head>
   <body>
     <main>
-      <img
-        src="./images/image-product-desktop.jpg"
-        alt=""
-        class="desktop-image"
-      />
-      <img
-        src="./images/image-product-mobile.jpg"
-        alt=""
-        class="mobile-image"
-      />
+      <picture>
+        <source
+          media="(max-width:650px)"
+          srcset="./images/image-product-mobile.jpg"
+          class="mobile-image"
+        />
+        <img
+          src="./images/image-product-desktop.jpg"
+          alt="Gabrielle Parfum"
+          style="width: auto"
+          class="desktop-image"
+        />
+      </picture>
       <section class="container">
         <p class="text-1">PERFUME</p>
         <h1 class="text-2">
